@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 $background-color: rgba(13, 3, 3, 0.932);
 $text-color: #fff;
 
@@ -7,7 +8,7 @@ html, body{
 }
 .body{
     height: 100vh;
-    font-family:'Montseratt' ;
+    font-family: 'Montserrat', sans-serif;
     background-image: url('../img/classic\ mustang.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -43,6 +44,7 @@ html, body{
 }
 
 .phone-section{
+    z-index: 9;
     position: absolute;
     background-color: transparent;
     min-height: 406px;
@@ -61,13 +63,13 @@ header{
     text-align: center;
     width: 100%;
 
-    img{
+    .main-logo{
         max-height: 30px;
     }
 
 }
 @media screen and (min-width: 738px){
-    img{
+    .main-logo{
         float: left;
         margin-left: 140px;
     }

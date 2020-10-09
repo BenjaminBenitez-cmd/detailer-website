@@ -22,9 +22,13 @@ function Navigation({history}){
 
    const activeRemover = ()=>{
        document.querySelector('a.active').classList.remove('active');
+       setMenu({ isSelected :false} )
        
    }
 
+   useEffect(()=>{
+       history.push(`${menu.path}`)
+   }, [])
 
     
     return(
@@ -33,10 +37,10 @@ function Navigation({history}){
                 <Link className="active" onClick={(e) =>menuUpdater('/', e)} to="/"></Link>
             </li>
             <li>
-                <Link className="inActive" onClick={(e) =>menuUpdater('/book', e)} to="/book"></Link>
+                <Link className="inActive" onClick={(e) =>menuUpdater('/schedule', e)} to="/schedule"></Link>
             </li>
             <li>
-                <Link className="inActive"  onClick={(e) =>menuUpdater('/schedule', e)} to="/schedule"></Link>
+                <Link className="inActive"  onClick={(e) =>menuUpdater('/payment', e)} to="/payment"></Link>
             </li>
             <li>
                 <Link className="inActive"  onClick={(e) =>menuUpdater('/date', e)} to="/date"></Link>

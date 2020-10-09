@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
+import {BookD, PaymentD, ScheduleD} from './components'
 
 
-export default function Phone(){
+export default function Phone({section}){
+
+    const [page, setPage] = useState(section);
     return(
         <div className="phone-section">
                   <div className="marvel-device iphone-x">
@@ -21,7 +24,15 @@ export default function Phone(){
                       </div>
                       <div className="inner-shadow"></div>
                       <div className="screen">
-             
+                            {
+                                (page === 'bookd') ? <BookD /> : null 
+                            }
+                            {
+                                (page === 'scheduled') ? <ScheduleD /> : null 
+                            }
+                            {
+                                (page === 'paymentd') ? <PaymentD /> : null 
+                            }
                       </div>
                   </div>
               </div>

@@ -14,13 +14,13 @@ function App() {
        <div className="body">
         <div className="wrapper">
             <header>
-                <a href=""><img src={logo}/></a>
+                <a href=""><img className="main-logo" src={logo}/></a>
             </header>
             <main>
               <Switch>
-                <Route path="/"exact component={Payment}/>
-                <Route path="/book" component={Book}/>
+                <Route path="/"exact component={Book}/>
                 <Route path="/schedule" component={Schedule}/>
+                <Route path="/payment" component={Payment}/>
                 <Route path="/date" component={Date}/>
               </Switch>
               <Navigation/>
