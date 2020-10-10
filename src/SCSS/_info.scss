@@ -5,6 +5,31 @@
         font-size: 80px;
         font-weight: 100;
         color: $text-color;
+        @media screen and (max-width:1147px) {
+            font-size: 40px;
+            transition: 1s;
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+        }
     }
+
+  
+
+    
 }
 
+.book{
+    top:50%;
+    left:20%;
+   
+}
+
+.schedule{
+    top: 15%;
+    right: 8%;
+}
+
+.payment{
+    top: 58%;
+    right: 25%;
+}

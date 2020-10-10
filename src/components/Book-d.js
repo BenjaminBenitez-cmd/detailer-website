@@ -36,6 +36,7 @@
                         </div>
                     </div>
                     <div className="col-xs-6 center-align">
+                        
                         <div className="main-card">
                             <ul>
                                 <li>

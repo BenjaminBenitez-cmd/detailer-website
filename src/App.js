@@ -1,6 +1,5 @@
 import React from 'react';
 import logo from './img/logo.svg';
-import Navigation from './Navigation';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import {Book, Payment, Schedule, Date} from './pages'
 
@@ -23,7 +22,6 @@ function App() {
                 <Route path="/payment" component={Payment}/>
                 <Route path="/date" component={Date}/>
               </Switch>
-              <Navigation/>
             </main>
           </div>
       </div>

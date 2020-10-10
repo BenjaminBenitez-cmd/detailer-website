@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import {BookD, PaymentD, ScheduleD} from './components'
+import Nav from './pages/Nav';
 
 
 export default function Phone({section}){
 
     const [page, setPage] = useState(section);
     return(
+
+            
         <div className="phone-section">
                   <div className="marvel-device iphone-x">
                       <div className="notch">
@@ -35,6 +38,8 @@ export default function Phone({section}){
                             }
                       </div>
                   </div>
+
+                  <Nav page={section} />
               </div>
     )
 
