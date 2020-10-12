@@ -23,6 +23,7 @@ function App() {
                 <Route path="/date" component={Date}/>
               </Switch>
             </main>
+            <footer></footer>
           </div>
       </div>
     </BrowserRouter>

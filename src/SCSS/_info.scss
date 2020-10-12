@@ -10,6 +10,8 @@
             transition: 1s;
             writing-mode: vertical-lr;
             text-orientation: upright;
+            margin-block-start: 4px;
+            margin-block-end: 4px;
         }
     }
 
@@ -21,15 +23,30 @@
 .book{
     top:50%;
     left:20%;
+    @media screen and (max-width:1147px) {
+       left: 0; 
+       transform: translateY(-50%);
+       
+    }
    
 }
 
 .schedule{
     top: 15%;
     right: 8%;
+    @media screen and (max-width:1147px) {
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+     }
 }
 
 .payment{
     top: 58%;
     right: 25%;
+    @media screen and (max-width:1147px) {
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+     }
 }

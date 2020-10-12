@@ -1,12 +1,12 @@
 .date{
-    position: absolute;
+  
     height: 500px;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    transform: translateX(-50%);
+ 
     
     @media screen and (min-width: 738px){
         min-height: 436px;
