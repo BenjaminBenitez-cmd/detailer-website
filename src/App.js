@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from './img/logo.svg';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import {Book, Payment, Schedule, Date} from './pages'
@@ -7,6 +7,10 @@ import {Book, Payment, Schedule, Date} from './pages'
 
 
 function App() {
+
+  useEffect(()=>{
+    document.querySelector('.loader').style.display = "none";
+  }, [])
 
   return (
     <BrowserRouter>
