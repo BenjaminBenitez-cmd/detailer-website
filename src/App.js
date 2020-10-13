@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import logo from './img/logo.svg';
-import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import {BrowserRouter, Switch, Route, Link} from 'react-router-dom';
 import {Book, Payment, Schedule, Date} from './pages'
 
 
@@ -17,7 +17,7 @@ function App() {
        <div className="body">
         <div className="wrapper">
             <header>
-                <a href=""><img className="main-logo" src={logo} alt="Detailer main logo"/></a>
+              <Link to = "/"><img className="main-logo" src={logo} alt="Detailer main logo"/></Link>
             </header>
             <main>
               <Switch>

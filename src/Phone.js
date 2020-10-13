@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {BookD, PaymentD, ScheduleD} from './components'
 import Nav from './pages/Nav';
 
 
 export default function Phone({section}){
 
-    const [page, setPage] = useState(section);
     return(
 
             
@@ -28,13 +27,13 @@ export default function Phone({section}){
                       <div className="inner-shadow"></div>
                       <div className="screen">
                             {
-                                (page === 'bookd') ? <BookD /> : null 
+                                (section === 'bookd') ? <BookD /> : null 
                             }
                             {
-                                (page === 'scheduled') ? <ScheduleD /> : null 
+                                (section === 'scheduled') ? <ScheduleD /> : null 
                             }
                             {
-                                (page === 'paymentd') ? <PaymentD /> : null 
+                                (section === 'paymentd') ? <PaymentD /> : null 
                             }
                       </div>
                   </div>

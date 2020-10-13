@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect} from 'react';
 import {withRouter, Link} from 'react-router-dom';
 
 function Navigation(props){
@@ -12,9 +12,9 @@ function Navigation(props){
         searchVar.classList.add('active');
     }
     
-    useEffect(()=> {
-        menuUpdater();
-    },[])
+    useEffect(
+        menuUpdater
+    ,[])
     
     return(
         <nav>
