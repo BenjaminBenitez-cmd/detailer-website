@@ -10,7 +10,7 @@ export default function Phone({section}){
 
             
         <div className="phone-section">
-                  <div className="marvel-device iphone-x">
+                  <div className="marvel-device iphone-x  ">
                       <div className="notch">
                           <div className="camera"></div>
                           <div className="speaker"></div>

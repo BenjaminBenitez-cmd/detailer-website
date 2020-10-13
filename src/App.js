@@ -13,7 +13,7 @@ function App() {
        <div className="body">
         <div className="wrapper">
             <header>
-                <a href=""><img className="main-logo" src={logo}/></a>
+                <a href=""><img className="main-logo" src={logo} alt="Detailer main logo"/></a>
             </header>
             <main>
               <Switch>

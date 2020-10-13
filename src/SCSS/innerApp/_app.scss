@@ -61,6 +61,7 @@
         .main-card{
             height: 100px;
             width: 100px;
+            background-color: #903B3B;
             background-image: linear-gradient(to bottom right,  #903B3B, $background-color);
             border-radius: 10px;
             text-align: center;
@@ -68,6 +69,37 @@
             justify-content: center;
             align-items: center;
             box-shadow: 4px 6px 5px 0 rgba(0, 0, 0, 0.2);
+            animation: press 4s linear 2s infinite alternate backwards running;
+        //    animation-name: press;
+        //    animation-duration: 3s;
+        //    animation-iteration-count: infinite;
+            
+            @keyframes press{
+              
+                0%{
+                    background-image: none;
+                    background-color:  #903B3B;
+                }
+                25%{
+                    background-image: none;
+                    background-color: $background-color;
+                }
+                50%{ 
+                    background-image: none;
+                    background-color: #903B3B;
+                }
+                75%{ 
+                    background-image: none;
+                    background-color: $background-color;
+                }
+                100%{ 
+                    background-image: none;
+                    background-color: #903B3B;
+                 
+                }
+
+            }
+
 
             &:hover{
                 background-image: none;

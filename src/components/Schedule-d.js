@@ -53,8 +53,12 @@ export default function ScheduleD(){
     
                 </div>
                 <div className="row last">
-                    <button className="wash-button">Wash Now</button>
-                    <button className="wash-button">Wash Later</button>
+                    <Link to="/payment">
+                        <button className="wash-button">Wash Now</button>
+                    </Link>
+                    <Link to="/payment">
+                         <button className="wash-button">Wash Later</button>
+                    </Link> 
                 </div>
                
              </div>

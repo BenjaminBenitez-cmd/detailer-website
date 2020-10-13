@@ -4,6 +4,7 @@ import visa from '../img/visa.png';
 import paypal from '../img/paypal.png';
 import amazon from '../img/amazon.png';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+import { Link } from 'react-router-dom';
 
 export default function PaymentD(){
     return(
@@ -63,7 +64,10 @@ export default function PaymentD(){
                 </div>
 
                 <div className="row last">
-                    <button>PAY SECURE</button>
+                    <Link to="/date">
+                        <button>PAY SECURE</button>
+                    </Link>
+                   
                 </div>
             </div>
         </div>

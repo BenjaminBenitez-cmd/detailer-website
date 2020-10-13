@@ -5,6 +5,7 @@
  import CreditCardIcon from '@material-ui/icons/CreditCard';
  import DateRangeIcon from '@material-ui/icons/DateRange';
  import TrackChangesIcon from '@material-ui/icons/TrackChanges';
+import { Link } from 'react-router-dom';
 
 
  export default function BookD(){
@@ -36,17 +37,19 @@
                         </div>
                     </div>
                     <div className="col-xs-6 center-align">
+                        <Link to="schedule">
+                            <div className="main-card">
+                                <ul>
+                                    <li>
+                                        <DateRangeIcon style={{fontSize: "35px"}}/>
+                                    </li>
+                                    <li>
+                                        Schedule
+                                    </li>
+                                </ul>
+                            </div>
+                        </Link>
                         
-                        <div className="main-card">
-                            <ul>
-                                <li>
-                                    <DateRangeIcon style={{fontSize: "35px"}}/>
-                                </li>
-                                <li>
-                                    Schedule
-                                </li>
-                            </ul>
-                        </div>
                     </div>
                     <div className="col-xs-3">
                         <div className="right-card">
